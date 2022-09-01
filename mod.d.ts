@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,35 +16,34 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { ArrayLike } from '@stdlib/types/array';
 
 /**
-* Return a boolean indicating if a buffer length is compatible with a provided shape array.
+* Returns a boolean indicating if a buffer length is compatible with a provided shape array.
 *
-* @module @stdlib/ndarray-base-assert-is-buffer-length-compatible-shape
+* @param len - buffer length
+* @param shape - array shape
+* @returns boolean indicating if a buffer length is compatible with a provided shape array
 *
 * @example
-* var isBufferLengthCompatibleShape = require( '@stdlib/ndarray-base-assert-is-buffer-length-compatible-shape' );
-*
 * var shape = [ 2, 2 ];
 *
-* var bool = isBufferLengthCompatibleShape( 10, shape );
+* var bool = isBufferLengthCompatibleShape( 4, shape );
 * // returns true
 *
 * @example
-* var isBufferLengthCompatibleShape = require( '@stdlib/ndarray-base-assert-is-buffer-length-compatible-shape' );
-*
 * var shape = [ 2, 2 ];
 *
 * var bool = isBufferLengthCompatibleShape( 3, shape );
 * // returns false
 */
-
-// MODULES //
-
-var isBufferLengthCompatibleShape = require( './main.js' ); // eslint-disable-line id-length
+declare function isBufferLengthCompatibleShape( len: number, shape: ArrayLike<number> ): boolean; // tslint-disable-line max-line-length
 
 
 // EXPORTS //
 
-module.exports = isBufferLengthCompatibleShape;
+export = isBufferLengthCompatibleShape;
