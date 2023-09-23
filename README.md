@@ -54,7 +54,7 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
-import isBufferLengthCompatibleShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-buffer-length-compatible-shape@esm/index.mjs';
+import isBufferLengthCompatibleShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-buffer-length-compatible-shape@v0.1.0-esm/index.mjs';
 ```
 
 #### isBufferLengthCompatibleShape( len, shape )
@@ -102,7 +102,7 @@ bool = isBufferLengthCompatibleShape( 3, shape );
 <script type="module">
 
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@esm/index.mjs';
-import isBufferLengthCompatibleShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-buffer-length-compatible-shape@esm/index.mjs';
+import isBufferLengthCompatibleShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-buffer-length-compatible-shape@v0.1.0-esm/index.mjs';
 
 var shape;
 var bool;
