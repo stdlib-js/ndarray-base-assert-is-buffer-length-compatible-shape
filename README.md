@@ -56,7 +56,7 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
-isBufferLengthCompatibleShape = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-buffer-length-compatible-shape@umd/browser.js' )
+isBufferLengthCompatibleShape = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-buffer-length-compatible-shape@v0.1.1-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -68,7 +68,7 @@ var isBufferLengthCompatibleShape = require( 'path/to/vendor/umd/ndarray-base-as
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-buffer-length-compatible-shape@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-buffer-length-compatible-shape@v0.1.1-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -124,7 +124,7 @@ bool = isBufferLengthCompatibleShape( 3, shape );
 <html lang="en">
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-buffer-length-compatible-shape@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-buffer-length-compatible-shape@v0.1.1-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
