@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,21 +16,18 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
-var numel = require( '@stdlib/ndarray-base-numel' );
-
-
-// MAIN //
+import { ArrayLike } from '@stdlib/types/array';
 
 /**
 * Returns a boolean indicating if a buffer length is compatible with a provided shape array.
 *
-* @param {NonNegativeInteger} len - buffer length
-* @param {NonNegativeIntegerArray} shape - array shape
-* @returns {boolean} boolean indicating if a buffer length is compatible with a provided shape array
+* @param len - buffer length
+* @param shape - array shape
+* @returns boolean indicating if a buffer length is compatible with a provided shape array
 *
 * @example
 * var shape = [ 2, 2 ];
@@ -44,11 +41,9 @@ var numel = require( '@stdlib/ndarray-base-numel' );
 * var bool = isBufferLengthCompatibleShape( 3, shape );
 * // returns false
 */
-function isBufferLengthCompatibleShape( len, shape ) { // eslint-disable-line id-length
-	return ( len >= numel( shape ) );
-}
+declare function isBufferLengthCompatibleShape( len: number, shape: ArrayLike<number> ): boolean;
 
 
 // EXPORTS //
 
-module.exports = isBufferLengthCompatibleShape;
+export = isBufferLengthCompatibleShape;
