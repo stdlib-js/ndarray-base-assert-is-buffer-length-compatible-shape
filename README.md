@@ -54,6 +54,11 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
+import isBufferLengthCompatibleShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-buffer-length-compatible-shape@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ndarray-base-assert-is-buffer-length-compatible-shape/tags). For example,
+
+```javascript
 import isBufferLengthCompatibleShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-buffer-length-compatible-shape@v0.2.0-deno/mod.js';
 ```
 
@@ -97,7 +102,7 @@ bool = isBufferLengthCompatibleShape( 3, shape );
 
 ```javascript
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@deno/mod.js';
-import isBufferLengthCompatibleShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-buffer-length-compatible-shape@v0.2.0-deno/mod.js';
+import isBufferLengthCompatibleShape from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-buffer-length-compatible-shape@deno/mod.js';
 
 var shape;
 var bool;
