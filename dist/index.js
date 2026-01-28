@@ -1,5 +1,34 @@
-"use strict";var u=function(r,e){return function(){return e||r((e={exports:{}}).exports,e),e.exports}};var i=u(function(p,t){
-var s=require('@stdlib/ndarray-base-numel/dist');function n(r,e){return r>=s(e)}t.exports=n
-});var a=i();module.exports=a;
 /** @license Apache-2.0 */
-//# sourceMappingURL=index.js.map
+
+'use strict';
+
+/**
+* Return a boolean indicating if a buffer length is compatible with a provided shape array.
+*
+* @module @stdlib/ndarray-base-assert-is-buffer-length-compatible-shape
+*
+* @example
+* var isBufferLengthCompatibleShape = require( '@stdlib/ndarray-base-assert-is-buffer-length-compatible-shape' );
+*
+* var shape = [ 2, 2 ];
+*
+* var bool = isBufferLengthCompatibleShape( 10, shape );
+* // returns true
+*
+* @example
+* var isBufferLengthCompatibleShape = require( '@stdlib/ndarray-base-assert-is-buffer-length-compatible-shape' );
+*
+* var shape = [ 2, 2 ];
+*
+* var bool = isBufferLengthCompatibleShape( 3, shape );
+* // returns false
+*/
+
+// MODULES //
+
+var main = require( './main.js' );
+
+
+// EXPORTS //
+
+module.exports = main;
